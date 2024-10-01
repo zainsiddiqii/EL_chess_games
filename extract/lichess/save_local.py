@@ -33,7 +33,9 @@ if games:
         game_df = extract_game_data(game)
         df = df.vstack(game_df)
         
+    print(f"Saving data for {year_month}")
     df.write_ndjson(games_data_path / f"{year_month}.ndjson")
+    print(f"Data saved for {year_month}")
         
 else:
     print("No games found. Exiting...")

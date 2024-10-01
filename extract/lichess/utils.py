@@ -80,6 +80,9 @@ def extract_game_data(game: dict) -> pl.DataFrame:
     game_status = game['status']
     game_winner = game.get('winner', "draw")
     url = f'https://lichess.org/{game_id}'
+    
+    print('Extracting data from:', url)
+    
     time_class = game['speed']
     time_control = str(game.get('clock').get('initial')) + '+' + str(game.get('clock').get('increment'))
     is_rated = game['rated']
