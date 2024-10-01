@@ -1,0 +1,9 @@
+games_data/chesscom/
+games_data/lichess/
+__init__.py
+_venv/
+_venv/Lib/
+.env
+exploration_chesscom.ipynb
+exploration_lichess.ipynb
+bigquery_service_account.json
