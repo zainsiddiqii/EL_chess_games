@@ -162,9 +162,9 @@ def extract_game_data(game: dict) -> pl.DataFrame:
     
     return df
 
-def extract_monthly_data(year: int, month: int) -> pl.DataFrame:
+def extract_monthly_data(year: int, month: int, username: str) -> pl.DataFrame:
     
-    monthly_data = get_monthly_archive(year, month)
+    monthly_data = get_monthly_archive(year, month, username=username)
     games = monthly_data['games']
     
     df = pl.DataFrame({})

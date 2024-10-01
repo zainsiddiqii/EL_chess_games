@@ -7,3 +7,5 @@ _venv/Lib/
 exploration_chesscom.ipynb
 exploration_lichess.ipynb
 bigquery_service_account.json
+extract/chesscom/__pycache__/
+extract/lichess/__pycache__/
