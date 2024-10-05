@@ -9,3 +9,5 @@ exploration_lichess.ipynb
 bigquery_service_account.json
 extract/chesscom/__pycache__/
 extract/lichess/__pycache__/
+load/lichess/__pycache__/
+load/chesscom/__pycache__/
