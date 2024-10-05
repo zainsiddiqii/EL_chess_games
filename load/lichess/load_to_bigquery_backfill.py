@@ -6,8 +6,8 @@ os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getcwd() + r"\bigquery_service
 
 PROJECT_ID = "chessgames"
 ENV = "dev"
+DATASET_ID = f"{ENV}"
 PLATFORM = "lichess"
-DATASET_ID = f"{ENV}_games"
 TABLE_NAME = f"raw_games_{PLATFORM}"
 
 client = bigquery.Client()
