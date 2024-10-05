@@ -11,7 +11,7 @@ from google.cloud.bigquery import (
 job_config = LoadJobConfig(
     schema=[
         # SchemaField("name", "field_type", "mode", "default_value_expression", "description")
-        SchemaField("game_id", "STRING", "Required", None, "id Provided by licess"),
+        SchemaField("game_id", "STRING", "Required", None, "id provided by licess"),
         SchemaField("url", "STRING", "NULLABLE", None, "game url on lichess.org"),
         SchemaField("time_class", "STRING", "NULLABLE", None, "time class of the game"),
         SchemaField("time_control", "STRING", "NULLABLE", None, "time control of the game"),
@@ -21,7 +21,7 @@ job_config = LoadJobConfig(
         SchemaField("white_accuracy", "FLOAT", "NULLABLE", None, "white player's accuracy"),
         SchemaField("black_accuracy", "FLOAT", "NULLABLE", None, "black player's accuracy"),
         SchemaField("game_winner", "STRING", "NULLABLE", None, "winner of the game. Can be 'white', 'black', or 'draw'"),
-        SchemaField("game_Status", "STRING", "NULLABLE", None, "can be draw, mate, resign, outoftime, aborted, stalemate, timeout, cheat"),
+        SchemaField("game_status", "STRING", "NULLABLE", None, "can be draw, mate, resign, outoftime, aborted, stalemate, timeout, cheat"),
         SchemaField("colour", "STRING", "NULLABLE", None, "colour of the player"),
         SchemaField("opponent_id", "STRING", "NULLABLE", None, "opponent's id as provided by lichess"),
         SchemaField("opponent_username", "STRING", "NULLABLE", None, "opponent's username"),
